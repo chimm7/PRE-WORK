@@ -1,0 +1,590 @@
+/* 
+html5doctor.com Reset Stylesheet
+v1.6.1
+Last Updated: 2010-09-17
+Author: Richard Clark - http://richclarkdesign.com 
+Twitter: @rich_clark
+*/
+*, *:after, *:before {
+  box-sizing: border-box;
+}
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  font-weight: normal;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+body {
+  line-height: 1;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+nav, ul, li {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a:visited {
+  color: inherti;
+}
+
+/* change colours to suit your needs */
+ins {
+  background-color: #ff9;
+  color: #000;
+  text-decoration: none;
+}
+
+/* change colours to suit your needs */
+mark {
+  background-color: #ff9;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+del {
+  text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+  border-bottom: 1px dotted;
+  cursor: help;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* change border colour to suit your needs */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #cccccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+input, select {
+  vertical-align: middle;
+}
+
+/*# sourceMappingURL=reset.css.map */
+html {
+  font-size: 62.5%;
+  width: 100%;
+}
+
+.wrap1 {
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.6rem;
+  font-family: "Roboto Mono";
+  letter-spacing: 1.6px;
+}
+
+h1 {
+  font-size: 4.0rem;
+}
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+}
+
+h2 {
+  font-size: 3.0rem;
+  font-family: "Roboto Mono";
+  text-align: center;
+  padding: 37px 0 34px 0;
+}
+
+th {
+  color: #00000038;
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  font-weight: bold;
+  text-align: left;
+  vertical-align: middle;
+  padding-bottom: 30px;
+}
+
+tr {
+  text-align: left;
+  vertical-align: middle;
+}
+
+td {
+  color: #FFFFFF;
+  font-family: "Roboto Mono";
+  font-size: 16px;
+  padding-bottom: 23px;
+}
+
+.title {
+  display: flex;
+  justify-content: flex-start;
+  padding: 291px 0 0 5%;
+  text-align: left;
+  letter-spacing: 5.4px;
+  font: normal normal normal 18px/24px Roboto;
+  color: #707070;
+}
+.title::after {
+  display: block;
+  content: "";
+  width: 3.8em;
+  border-bottom: 1px solid #707070;
+  margin: 12px 12px;
+}
+@media screen and (max-width: 600px) {
+  .title {
+    padding: 60px 0 50px 5%;
+  }
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5% 0 0 6vh;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+  font-family: "Roboto Mono";
+}
+@media screen and (max-width: 600px) {
+  header {
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    margin: 0 0 0 21px;
+    justify-content: space-between;
+  }
+}
+
+.header h1 {
+  width: 24.2%;
+}
+
+.ham {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .ham {
+    width: 16px;
+    height: 14px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .ham span {
+    display: inline-block;
+    width: 100%;
+    height: 1px;
+    background-color: #3B4043;
+  }
+  .ham span :last-child {
+    width: 50%;
+  }
+}
+
+.header-nav {
+  padding-left: 20px;
+}
+@media screen and (max-width: 600px) {
+  .header-nav {
+    padding: 0;
+  }
+}
+
+.header-nav li {
+  display: inline-block;
+  font-size: 1.8rem;
+  padding-left: 21px;
+  color: #707070;
+}
+.header-nav li:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.header-nav li:first-child {
+  padding: 0;
+}
+@media screen and (max-width: 600px) {
+  .header-nav li {
+    display: none;
+  }
+}
+
+.first-v {
+  height: 84vh;
+}
+
+.first-v__copy {
+  position: relative;
+  width: 45%;
+  height: 100%;
+  padding-top: 100px;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .first-v__copy {
+    width: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 2.8px;
+    padding: 0;
+    text-shadow: 0px 3px 16px #000000;
+    background-position: -100px,0;
+    z-index: 10;
+  }
+}
+
+.first-v__img {
+  background-image: url(../img/img1.png);
+  background-size: cover;
+  width: 55%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+@media screen and (max-width: 600px) {
+  .first-v__img {
+    width: 100%;
+    height: 84vh;
+    top: 70px;
+    background-size: cover;
+  }
+}
+
+.catch-1 {
+  font-size: 3.8rem;
+  font-family: "Hiragino Mincho Pro",serif;
+  text-align: left;
+  letter-spacing: 3.8px;
+  opacity: 1;
+  padding-left: 18%;
+}
+@media screen and (max-width: 600px) {
+  .catch-1 {
+    font-size: 2.3rem;
+    padding: 0;
+  }
+}
+
+.catch-2 {
+  font-size: 5.8rem;
+  font-family: "Zapfino","Tangerine",cursive;
+  text-align: left;
+  height: 128px;
+  letter-spacing: 4.8px;
+  opacity: 1;
+  margin-top: 6%;
+  padding-left: 18%;
+}
+@media screen and (max-width: 600px) {
+  .catch-2 {
+    height: 95px;
+    font-size: 6.0rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.concept {
+  height: 963px;
+  position: relative;
+  background: linear-gradient(180deg, #A193861F 0%, #A193861F 403px, #A1938689 100px, #A1938689 100%);
+}
+@media screen and (max-width: 600px) {
+  .concept {
+    height: 711px;
+    background: linear-gradient(180deg, #A193861F 0%, #A193861F 176px, #A1938689 100px, #A1938689 100%);
+  }
+}
+
+.concept__wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.concept__wrap-img {
+  width: 84%;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 600px) {
+  .concept__wrap-img {
+    width: 90%;
+    height: 205px;
+    overflow: hidden;
+  }
+}
+.concept__wrap-img .left {
+  width: 62%;
+}
+@media screen and (max-width: 600px) {
+  .concept__wrap-img .left {
+    width: 47%;
+    height: 100%;
+  }
+}
+.concept__wrap-img .right {
+  width: 36%;
+}
+@media screen and (max-width: 600px) {
+  .concept__wrap-img .right {
+    width: 47%;
+    height: 100%;
+  }
+}
+
+.concept__wrap-word {
+  height: 560px;
+  width: 84%;
+  display: flex;
+  justify-content: space-evenly;
+  color: #fff;
+  padding: 39px;
+}
+.concept__wrap-word h1 {
+  font-family: "Hiragino Kaku Gothic Pro",serif;
+  text-align: center;
+  margin-bottom: 10%;
+}
+@media screen and (max-width: 600px) {
+  .concept__wrap-word p br {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  .concept__wrap-word {
+    width: 100%;
+    padding: 10% 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+
+.menu-wrap {
+  display: flex;
+  justify-content: space-around;
+}
+@media screen and (max-width: 600px) {
+  .menu-wrap {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.cut, .perm, .make {
+  width: 274px;
+  height: 555px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  margin-bottom: 70px;
+}
+
+.price {
+  text-align: right;
+  padding-top: 34px;
+}
+
+.access {
+  background-color: #A193861F;
+  width: 100%;
+  height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  .access {
+    height: 710px;
+  }
+}
+.access .box {
+  height: 396px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  .access .box {
+    height: 100%;
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+  }
+}
+.access .box .address {
+  display: block;
+  width: 39%;
+  height: 100%;
+  background-color: #D0C5BA;
+  text-align: center;
+}
+@media screen and (max-width: 600px) {
+  .access .box .address {
+    width: 100%;
+    height: 40%;
+  }
+}
+.access .box .map {
+  width: 61%;
+  height: 100%;
+}
+@media screen and (max-width: 600px) {
+  .access .box .map {
+    width: 100%;
+    height: 31%;
+  }
+}
+
+.address-word {
+  margin: 101px 0 0 104px;
+}
+@media screen and (max-width: 600px) {
+  .address-word {
+    text-align: left;
+    margin: 30px 0 0 20px;
+    line-height: 23px;
+  }
+}
+
+footer {
+  height: 342px;
+  background-color: #fff;
+  position: relative;
+}
+@media screen and (max-width: 600px) {
+  footer {
+    height: 260px;
+  }
+}
+
+.wrap {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  height: 171px;
+  width: 83%;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #7070704D;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .wrap {
+    flex-direction: column-reverse;
+    justify-content: center;
+    width: 90%;
+    height: 100%;
+  }
+}
+.wrap__icon {
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .wrap__icon {
+    justify-content: space-between;
+  }
+}
+.wrap__icon h2 {
+  color: #7070704D;
+}
+@media screen and (max-width: 600px) {
+  .wrap__icon h2 {
+    font-size: 1.8rem;
+  }
+}
+.wrap__icon i {
+  margin-left: 9px;
+}
+.wrap__reserve-btn {
+  width: 184px;
+  height: 37px;
+  border: 1px solid #7070704D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wrap__reserve-btn p {
+  color: #707070;
+  font-size: 1.8rem;
+}
+
+/*# sourceMappingURL=main.css.map */

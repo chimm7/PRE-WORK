@@ -1,0 +1,22 @@
+.menu-wrap {
+    display: flex;
+    justify-content: space-around;
+    @include sp {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cut, .perm, .make {
+    width: 274px;
+    height: 555px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-bottom: 70px;
+}
+
+.price {
+    text-align: right;
+    padding-top: 34px;
+}

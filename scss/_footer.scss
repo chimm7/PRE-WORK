@@ -1,0 +1,62 @@
+footer {
+    height: 342px;
+    background-color: #fff;
+    position: relative;
+    @include sp {
+        height: 260px;
+    }
+
+}
+
+.wrap {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    height: 171px;
+    width: 83%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #7070704D;
+    align-items: center;
+    @include sp {
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: 90%;
+        height: 100%;
+    }
+    &__icon {
+        width: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        @include sp {
+            justify-content: space-between;
+        }
+        h2 {
+            color: #7070704D;
+            @include sp {
+                font-size: 1.8rem;
+            }
+        }
+        i {
+            margin-left: 9px;
+        }
+    }
+    &__reserve-btn {
+        width: 184px;
+        height: 37px;
+        border: 1px solid #7070704D;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        p {
+            color: #707070;
+            font-size: 1.8rem;
+        }
+        
+        
+    }
+}
